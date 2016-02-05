@@ -1,0 +1,15 @@
+{
+  "gitbook": "2.x.x",
+  "structure": {
+    "summary": "SUMMARY.md"
+  },
+  "plugins": ["edit-link", "prism", "-highlight"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/9dots/devy/tree/master"
+    },
+    "github": {
+      "url": "https://github.com/9dots/devy"
+    }
+  }
+}
