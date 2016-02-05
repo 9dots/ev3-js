@@ -25,13 +25,6 @@ MoveSteering().timed(2000, 300, 100) // turn right for 2 seconds
 
 **Returns:** a move steering instance that controls two motors
 
-### [.forever(speed, turn, opts)]()
-Run both motors until they receive a stop command.
-
-- `speed` - speed at which to run the motors
-- `turn` - number between -100 and 100 to denote amount of turning. -100 is maximum left turn. 0 is straight. 100 is maximum right turn.
-- `opts` - an object of optional parameters
-
 ### [.rotations(rotations, speed, turn)](./rotations.md)
 Run both motors with a number of degrees the ability to turn.
 
@@ -46,12 +39,20 @@ Run both motors for a number of degrees with the ability to turn.
 - `speed` - speed at which to run the motors
 - `turn` - number between -100 and 100 to denote amount of turning. -100 is maximum left turn. 0 is straight. 100 is maximum right turn.
 
-### [.timed(time, speed, turn)]()
+### [.timed(time, speed, turn)](./timed.md)
 Run both motor for a specified amount of time.
 
   - `time` - time in milliseconds
   - `speed` - speed at which to run the motors
   - `turn` - number between -100 and 100 to denote amount of turning. -100 is maximum left turn. 0 is straight. 100 is maximum right turn.
+
+### [.forever(speed, turn, opts)](./forever.md)
+Run both motors until they receive a stop command.
+
+- `speed` - speed at which to run the motors
+- `turn` - number between -100 and 100 to denote amount of turning. -100 is maximum left turn. 0 is straight. 100 is maximum right turn.
+- `opts` - an object of optional parameters
+
 
 ### .stop()
 Stop both motors.

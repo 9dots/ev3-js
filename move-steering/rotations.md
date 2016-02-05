@@ -8,7 +8,7 @@ Run both motors with a number of degrees the ability to turn.
 - `turn` - number between -100 and 100 to denote amount of turning. -100 is maximum left turn. 0 is straight. 100 is maximum right turn.
 
 
-### Examples
+### Usage
 - Move straight forward 1 rotation at 400 speed
 
 ```js
