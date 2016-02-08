@@ -21,12 +21,13 @@ ColorSensor(1).color // => 7
 ```js
 var MoveSteering = require('move-steering')
 var ColorSensor = require('color-sensor')
-while (true) {
-      var brightness = ColorSensor(1).reflected
-      if (brightness >= 50) {
-        MoveSteering().forever(250, 30)
-      } else {
-        MoveSteering().forever(250, -30)
+
+while (true) { // infinite loop
+      var brightness = ColorSensor(1).reflected // get the reflect light intensity
+      if (brightness >= 50) { // if it is bright
+        MoveSteering().forever(250, 30) // turn right
+      } else { //otherwise
+        MoveSteering().forever(250, -30) // turn left
       }
 }
 ```
